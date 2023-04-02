@@ -1,6 +1,7 @@
 :root {
     --buttons-bg:#ebebeb;
     --accent-grey: rgb(159, 159, 159);
+    --emoji-size: 3rem;
 }
 
 body {
@@ -19,6 +20,25 @@ body {
 
 /* classes */
 
+.button {
+    width: 5rem;
+    height: 5rem;
+    border: solid 0.1rem var(--accent-grey);
+    border-radius: 0.25rem;
+    font-size: var(--emoji-size);
+    line-height: 0;
+}
+
+.button:first-child {
+    margin-left: 2rem;
+}
+
+.ghost-sticker {
+    position: fixed;
+    opacity: 0.5;
+    pointer-events: none;
+}  
+
 /* specific elements */
 
 .canvas {
@@ -31,17 +51,4 @@ body {
     width: 100%;
     background-color: var(--buttons-bg);
     border-top: ridge 0.1rem var(--accent-grey);
-}
-
-.button {
-    width: 5rem;
-    height: 5rem;
-    border: solid 0.1rem var(--accent-grey);
-    border-radius: 0.25rem;
-    font-size: 3rem;
-    line-height: 0;
-}
-
-.button:first-child {
-    margin-left: 2rem;
 }
