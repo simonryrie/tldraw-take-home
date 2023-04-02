@@ -2,7 +2,6 @@ const emojis = ['⭐', '🔥', '💖', '👍', '👎'];
 
 let stickerCount = 0;
 
-
 function createButtons() {
     const buttonsBar = document.getElementById('buttonsBar');
     emojis.forEach(emoji => {
@@ -47,7 +46,6 @@ function createSticker() {
   }
 }
 
-
 document.addEventListener('mousedown', (event) => {
     const circle = document.createElement('div');
     circle.classList = 'circle';
@@ -58,9 +56,6 @@ document.addEventListener('mousedown', (event) => {
         circle.style.display = 'none';
       });
 });
-
-
-
 
 document.getElementById('canvas').addEventListener('click', createSticker);
 document.addEventListener('DOMContentLoaded', createGhostSticker);

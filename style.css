@@ -1,5 +1,6 @@
 :root {
     --buttons-bg:#ebebeb;
+    --buttons-bg-hover:#dcdcdc;
     --accent-grey: rgb(159, 159, 159);
     --emoji-size: 3rem;
 }
@@ -59,6 +60,10 @@ body {
     margin-left: 2rem;
 }
 
+.button:hover {
+    background-color: var(--buttons-bg-hover);
+}
+
 .circle {
     position: absolute;
     width: 7.5rem;
@@ -66,5 +71,6 @@ body {
     border: 0.2rem solid black;
     border-radius: 50%;
     pointer-events: none;
+    opacity: 0.5;
 }
   
