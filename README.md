@@ -21,3 +21,11 @@ You've been assigned the ticket:
 3. As a **stretch goal**, pick one of the stories you created in step two and implement it in your app.
 
 Good luck!
+
+Issues:
+
+I want a blank 'canvas' area and a rack of emoji buttons to choose from
+I want my selected emoji to 'follow' my cursor around the screen
+When I click, I want my selected emoji to be pasted in place
+I want a circle to appear around the cursor when I click
+I want a hover effect on the buttons
