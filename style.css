@@ -58,3 +58,13 @@ body {
 .button:first-child {
     margin-left: 2rem;
 }
+
+.circle {
+    position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    pointer-events: none;
+}
+  

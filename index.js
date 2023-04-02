@@ -47,6 +47,21 @@ function createSticker() {
   }
 }
 
+
+document.addEventListener('mousedown', (event) => {
+    const circle = document.createElement('div');
+    circle.classList = 'circle';
+    document.body.appendChild(circle);
+    circle.style.top = `${event.clientY -60}px`;
+    circle.style.left = `${event.clientX -60}px`;
+    document.addEventListener('mouseup', () => {
+        circle.style.display = 'none';
+      });
+});
+
+
+
+
 document.getElementById('canvas').addEventListener('click', createSticker);
 document.addEventListener('DOMContentLoaded', createGhostSticker);
 createButtons();
