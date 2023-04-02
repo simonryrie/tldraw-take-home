@@ -1,5 +1,8 @@
 const emojis = ['⭐', '🔥', '💖', '👍', '👎'];
 
+let stickerCount = 0;
+
+
 function createButtons() {
     const buttonsBar = document.getElementById('buttonsBar');
     emojis.forEach(emoji => {
@@ -14,7 +17,6 @@ function createButtons() {
 function createGhostSticker() {
     const ghostSticker = document.createElement('div');
     ghostSticker.classList.add('ghost-sticker');
-    ghostSticker.style.fontSize = getComputedStyle(document.documentElement).getPropertyValue('--emoji-size');
     ghostSticker.textContent = '';
     document.body.appendChild(ghostSticker);
   
@@ -30,6 +32,21 @@ function createGhostSticker() {
       ghostSticker.style.left = `${event.clientX - 47.5}px`;
     });
 }
-  
-createGhostSticker();
+
+function createSticker() {
+  const ghostSticker = document.querySelector('.ghost-sticker');
+  if (ghostSticker.textContent !== '') {
+    stickerCount++;
+    const sticker = document.createElement('div');
+    sticker.classList.add('sticker');
+    sticker.textContent = ghostSticker.textContent;
+    sticker.style.top = `${ghostSticker.offsetTop}px`;
+    sticker.style.left = `${ghostSticker.offsetLeft}px`;
+    sticker.setAttribute('id', `sticker-${stickerCount}`);
+    document.getElementById('canvas').appendChild(sticker);
+  }
+}
+
+document.getElementById('canvas').addEventListener('click', createSticker);
+document.addEventListener('DOMContentLoaded', createGhostSticker);
 createButtons();
