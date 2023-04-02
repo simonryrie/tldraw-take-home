@@ -1,0 +1,47 @@
+:root {
+    --buttons-bg:#ebebeb;
+    --accent-grey: rgb(159, 159, 159);
+}
+
+body {
+    margin: 0;
+}
+
+/* flex */
+
+.row {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* classes */
+
+/* specific elements */
+
+.canvas {
+    height: 80vh;
+    width: 100%;
+}
+
+.buttons-bar {
+    height: 19.75vh;
+    width: 100%;
+    background-color: var(--buttons-bg);
+    border-top: ridge 0.1rem var(--accent-grey);
+}
+
+.button {
+    width: 5rem;
+    height: 5rem;
+    border: solid 0.1rem var(--accent-grey);
+    border-radius: 0.25rem;
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.button:first-child {
+    margin-left: 2rem;
+}
