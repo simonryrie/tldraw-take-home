@@ -1,4 +1,4 @@
-# tldraw take-home
+# tldraw Take Home Challenge
 
 1. Create a new repository based on this template (**Use this template** > **Create a new repository**)
 2. Clone the repository and open in your editor
