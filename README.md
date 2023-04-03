@@ -1,9 +1,5 @@
 # tldraw Take Home Challenge
 
-1. Create a new repository based on this template (**Use this template** > **Create a new repository**)
-2. Clone the repository and open in your editor
-3. Follow the instructions below.
-
 # Instructions
 
 tldraw is working on a new feature for our white-boarding app: **stickers!**
